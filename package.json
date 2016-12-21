@@ -1,0 +1,38 @@
+{
+  "name": "coffeetron",
+  "version": "1.0.0",
+  "description": "Electron boilerplate in coffeescript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harryhope/coffeetron.git"
+  },
+  "author": "Harry Hope",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harryhope/coffeetron/issues"
+  },
+  "homepage": "https://github.com/harryhope/coffeetron#readme",
+  "devDependencies": {
+    "cjsx-loader": "^3.0.0",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.12.2",
+    "coffeelint-cjsx": "^2.0.2",
+    "electron": "^1.4.13",
+    "electron-connect": "^0.6.1",
+    "grunt": "^1.0.1",
+    "grunt-coffeelint": "0.0.16",
+    "grunt-coffeelint-cjsx": "^0.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-mocha-test": "^0.13.2",
+    "grunt-sass": "^2.0.0",
+    "grunt-webpack": "^1.0.18",
+    "jsx-loader": "^0.13.2",
+    "mocha": "^3.2.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
