@@ -10,6 +10,9 @@ createWindow = ->
   globalWindow = new BrowserWindow
     width: 800
     height: 600
+    titleBarStyle: 'hidden-inset'
+    webPreferences:
+      scrollBounce: yes
 
   globalWindow.loadURL url.format
     pathname: path.join(__dirname, 'index.html')

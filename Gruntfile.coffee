@@ -10,7 +10,7 @@ module.exports = (grunt) ->
     'src/**/*.coffee'
   ]
   mainProcessScripts = [
-    'main.coffee'
+    'app.coffee'
   ]
   auxScripts = [
     'Gruntfile.coffee'
