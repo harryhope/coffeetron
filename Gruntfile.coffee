@@ -29,7 +29,7 @@ module.exports = (grunt) ->
         files: mainProcessScripts
         tasks: ['coffeelint', 'restart-electron']
       rendererProcess:
-        files: mainProcessScripts
+        files: mainProcessScripts.concat('index.html')
         tasks: ['compile-render', 'reload-electron']
       auxScripts:
         files: auxScripts
