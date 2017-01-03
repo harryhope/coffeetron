@@ -102,17 +102,17 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-mocha-test'
   grunt.loadNpmTasks 'grunt-sass'
 
-  # Combo Tasks
-  grunt.registerTask('compile-render', ['coffeelint', 'webpack'])
-  grunt.registerTask('test', ['coffeelint', 'mochaTest'])
-
-  # Tasks
-  grunt.registerTask 'dev', (env) ->
+  # Custom Tasks
+  grunt.registerTask 'start-electron', ->
     electron.start()
-    grunt.task.run 'watch'
 
   grunt.registerTask 'restart-electron', ->
     electron.restart()
 
   grunt.registerTask 'reload-electron', ->
     electron.reload()
+    
+  # Combo Tasks
+  grunt.registerTask('compile-render', ['coffeelint', 'webpack'])
+  grunt.registerTask('test', ['coffeelint', 'mochaTest'])
+  grunt.registerTask('dev', ['sass', 'compile-render', 'start-electron', 'watch'])
